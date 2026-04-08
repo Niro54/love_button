@@ -41,8 +41,9 @@ state_lock = _thread.allocate_lock()
  
 def connect_wifi():
     wlan = network.WLAN(network.STA_IF)
-    wlan.active(True)
-    wlan.disconnect()
+    wlan.active(False)  # force radio off
+    time.sleep(1)
+    wlan.active(True)   # back on fresh
     time.sleep(1)
     print("Connecting to WiFi...")
     wlan.connect(WIFI_SSID, WIFI_PASS)
