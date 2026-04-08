@@ -9,19 +9,19 @@ from machine import Pin, PWM
 
 # ================= CONFIG =================
 
-WIFI_SSID = "OFER"
-WIFI_PASS = "DEKEL0926"
+WIFI_SSID = "ovadia-levy"
+WIFI_PASS = "01122007"
 
 FIREBASE_HOST = "button-link-e80a1-default-rtdb.europe-west1.firebasedatabase.app"
 FIREBASE_PATH = "/status.json"
 DEVICE = "A"   # CHANGE TO "B" ON OTHER DEVICE
 
-GITHUB_USER = "YOUR_USERNAME"
-GITHUB_REPO = "YOUR_REPO"
+GITHUB_USER = "Niro54"
+GITHUB_REPO = "love_button"
 GITHUB_BRANCH = "main"
 OTA_URL = "https://raw.githubusercontent.com/" + GITHUB_USER + "/" + GITHUB_REPO + "/" + GITHUB_BRANCH + "/main.py"
 VERSION_URL = "https://raw.githubusercontent.com/" + GITHUB_USER + "/" + GITHUB_REPO + "/" + GITHUB_BRANCH + "/version.txt"
-LOCAL_VERSION_FILE = "version.txt"
+LOCAL_VERSION_FILE = "versions.txt"
 
 # ================= PINS ===================
 
